@@ -1,0 +1,174 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: grid;
+    grid-template-columns: 30% 10% 60%;
+    grid-template-rows: 1;
+}
+
+nav {
+    grid-area: 1 / 3 /span 1/ span 1;
+    margin-right: 10rem;
+
+}
+nav li {
+    display: flex;
+    padding-bottom: 20px;
+    color: #60a0d3;
+    list-style-type: none;
+    float: right;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1rem;
+    padding-top: 9rem;
+    margin-right: 10px;
+    justify-content: flex-end;
+  
+}
+
+ul {
+    margin: 0% 0% 0% 0%;
+}
+
+
+nav a{
+    color: #60a0d3;
+    text-decoration: none;
+}
+
+img.flower:hover {
+    transform: rotate(1.3turn);
+    transition: transform 1.75s;
+ 
+
+}
+
+logo {
+    font-size: 8.5rem;
+    margin-left: 10rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-top: 4rem;
+    display: block;
+    /*color: #787878;*/
+    color: #f0b1b9;  
+    padding-bottom: 0%;
+    grid-area: 1 / 1 / span 1/ span 1;
+}
+main {
+    width: 100%;
+    padding: 0%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 4;
+    margin-top: 4rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    column-gap: 3.5rem;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    letter-spacing: .25rem;
+    color:#CF415E ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+
+   
+    
+}
+p {
+    font-family: 'Nunito', sans-serif;
+    margin-left: 10%;
+   margin-right: 10%;
+}
+
+main img {
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+button{
+    border-width: 2px;
+    border-style: solid;
+    background-color: transparent;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    position: relative;
+    height: auto;
+    width: fit-content;
+    font-family: 'Nunito', sans-serif;
+    padding: 17px 17px;
+    margin-left: 35%;
+    margin-right: 35%;
+
+}
+.cielo img {
+    grid-area: 1 / 1 / span 1/ span 1;
+
+}
+.dinner img {
+    grid-area: 1 / 2 / span 1 / span 1;
+
+}
+.bread img {
+    grid-area: 1 / 3 / span 1 / span 1;
+
+}
+
+h1.cielo  {
+    grid-area: 2 / 1 / span 1 / span 1;
+
+}
+h1.dinner {
+    grid-area: 2 / 2 / span 1 / span 1;
+
+}
+h1.bread  {
+    grid-area: 2 / 3 / span 1 / span 1;
+
+}
+
+p.cielo {
+    grid-area: 3 / 1 / span 1 / span 1;
+    
+}
+
+p.dinner {
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+
+p.bread {
+    grid-area: 3 / 3 / span 1 / span 1;
+}
+
+button.cielo {
+    grid-area: 4 / 1 / span 1 / span 1;
+    
+}
+
+button.dinner {
+    grid-area: 4 / 2 / span 1 / span 1;
+}
+
+button.bread {
+    grid-area: 4 / 3 / span 1 / span 1;
+}
+
+
