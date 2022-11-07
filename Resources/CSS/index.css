@@ -4,6 +4,7 @@ html {
     margin: 0%;
     padding: 0%;
     font-size: 16px;
+    color: #ffffff;
 }
 
 body {
@@ -64,8 +65,12 @@ logo {
     margin-bottom: 0px;
     padding-top: 4rem;
     display: block;
-    color: #f0b1b9;  
+    color: #f8b7cd;  
     padding-bottom: 0%;
     grid-area: 1 / 1 / span 1/ span 1;
+}
+
+main img {
+    margin: 0rem 14rem 0rem 14rem;
 }
 

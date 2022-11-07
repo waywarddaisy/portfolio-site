@@ -70,5 +70,7 @@ logo {
 }
 
 main {
-    
+    column-count: 2;
+    margin: 10% 20% 0% 20%;
+
 }
