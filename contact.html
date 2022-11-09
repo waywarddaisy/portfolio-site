@@ -8,37 +8,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/Users/jenna/Desktop/Coding Projects/portfolio site/Resources/CSS/contact.css">
+    
     <title>Contact</title>
 </head>
 <body>
     <header>
-        <logo>jh</logo>
+        <logo><a href="/Users/jenna/Desktop/Coding Projects/portfolio site/index.html">jh</a></logo>
         <nav>
             <ul>
-                <li><a href="/Users/jenna/Desktop/Coding Projects/portfolio site/about.html"><img src="/Users/jenna/Desktop/Coding Projects/portfolio site/Resources/blackflowertwo.jpg" width="30px" class="flower"> ABOUT</a></li>
+                
                 <li><a href="/Users/jenna/Desktop/Coding Projects/portfolio site/projects.html"><img src="/Users/jenna/Desktop/Coding Projects/portfolio site/Resources/blackflowertwo.jpg" width="30px" class="flower"> PROJECTS</a></li>
+                <li><a href="/Users/jenna/Desktop/Coding Projects/portfolio site/about.html"><img src="/Users/jenna/Desktop/Coding Projects/portfolio site/Resources/blackflowertwo.jpg" width="30px" class="flower"> ABOUT</a></li>
                 <li><a href="/Users/jenna/Desktop/Coding Projects/portfolio site/index.html"><img src="/Users/jenna/Desktop/Coding Projects/portfolio site/Resources/blackflowertwo.jpg" width="30px" class="flower"> HOME</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <main>
-            <form action="">
-                <p>Dearest Jenna Hill,</p>
+        <letter class="letter" id="letter">
+            <form action="" class="letter" >
+                <p class="letter">Dearest Jenna Hill,</p>
                 <br>
-                <p>My name is</p> 
-                <input id="yourname" type="text" name="yourname" minlength="1" maxlength="25" required>
-                <p>I would like to reach out to you to with the following message.
+                <p class="letter">My name is <input id="yourname" type="text" name="yourname" minlength="1" maxlength="25" required></p>
+                <p class="letter">I would like to reach out to you to with the 
                 </p>
+                <p class="letter">following message.</p>
+                <br>
+             
+                <textarea class="letter" name="message" id="message" cols="45" rows="10" required></textarea>
                 <br>
                 <br>
-                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                <p>You may reach me at the following address of email</p>
-                <input type="text" id="email" name="email" minlength="5" maxlength="25" required>
-                <input type="submit" value="Fold and put in envelope">
+                <p class="letter" >You may reach me at the following address of email</p>
+                <input class="letter" type="text" id="email" name="email" minlength="5" maxlength="25" required>
+                <br>
+                <br>
+                <input type="submit" value="Finish!" id="submit" class="letter">
     
     
             </form>
+        </letter>
+    <send id="sending">
+        <p class="send">1234 The Internet<br>SAN DIEGO, CA<br>56789</p>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Send!" id="send">
+        
+    </send>
     </main>
+    <script src="/Users/jenna/Desktop/Coding Projects/portfolio site/portfolio.js"></script>  
 </body>
 </html>

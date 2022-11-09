@@ -65,9 +65,13 @@ logo {
     padding-top: 4rem;
     display: block;
     /*color: #787878;*/
-    color: #f0b1b9;  
+    color: #f8b7cd;  
     padding-bottom: 0%;
     grid-area: 1 / 1 / span 1/ span 1;
+}
+logo a {
+    text-decoration: none;
+    color: #f8b7cd;
 }
 main {
     width: 100%;
@@ -87,7 +91,7 @@ h1{
     font-size: 1.5rem;
     padding-top: 3rem;
     letter-spacing: .25rem;
-    color:#CF415E ;
+    color:#0671b7;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
 
@@ -97,7 +101,9 @@ h1{
 p {
     font-family: 'Nunito', sans-serif;
     margin-left: 10%;
-   margin-right: 10%;
+    margin-right: 10%;
+    color: #0671b7; 
+
 }
 
 main img {

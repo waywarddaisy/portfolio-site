@@ -10,6 +10,7 @@ body {
     width: 100%;
     margin: 0%;
     padding: 0%;
+    
 }
 
 header {
@@ -64,11 +65,89 @@ logo {
     margin-bottom: 0px;
     padding-top: 4rem;
     display: block;
-    color: #f0b1b9;  
+    color: #f8b7cd;  
     padding-bottom: 0%;
     grid-area: 1 / 1 / span 1/ span 1;
 }
+logo a {
+    text-decoration: none;
+    color: #f8b7cd;
+}
 
+#letter {
+    display: block;
+    padding-top: 2.5rem;
+    padding-bottom: 6rem;
+    background-image: url("/Users/jenna/Desktop/Coding Projects/portfolio site/Resources/paper.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 form {
-    padding-top: 4rem;
+    padding-top: 5.10rem;
+    padding-bottom: 6rem;
+    margin: 0rem 5rem 0rem 40rem;
+    color: #0671b7;
+}
+
+
+input  {
+    color: #0671b7;
+    border: none;
+    
+}
+
+#submit{
+    color: #0671b7;
+    border: none;
+    background-color: #f8b7cd;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-left: 8rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+}
+form p {
+    font-size: 1.25rem;
+    
+}
+
+textarea {
+    border: none;
+}
+
+#sending {
+    display: none;
+    padding-top: 0rem;
+    background-image: url("/Users/jenna/Desktop/Coding Projects/portfolio site/Resources/stamp.gif") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+p.send {
+    color: #0671b7;
+    margin-left: 50rem;
+    position: absolute;
+    margin-top: 23rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    
+    
+    
+}
+
+input#send{
+    color: #0671b7;
+    border: none;
+    background-color: #f8b7cd;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-left: 50rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+    margin-top: 35rem;
+    
 }
