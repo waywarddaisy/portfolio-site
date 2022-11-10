@@ -10,12 +10,15 @@ const finish = ()=> {
 
 button.onclick = finish;
 
+
 ///rotating flowers on home page (index)
 
 let about = document.getElementById("about");
 let home = document.getElementById('home');
 let projects = document.getElementById('projects');
 let contact = document.getElementById('contact');
+
+
 
 /*about.innerHTML = "BLOB";*/
 

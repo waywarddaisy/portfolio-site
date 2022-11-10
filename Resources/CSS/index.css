@@ -41,6 +41,40 @@ nav li {
   
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 1025px){
+
+    header {
+        display: flex;
+        margin-bottom: 10rem;
+    }
+
+    nav {
+        letter-spacing: .75rem;
+        margin-right: 0%;
+    }
+
+    nav li {
+        margin-right: 0%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+   header {
+    width: 100%;
+    display: flex;
+    padding-bottom: 5rem;
+   
+   }
+
+   nav li{
+    margin-top: 0%;
+    padding-top: 5%;
+  
+    
+ }
+}
+
 ul {
     margin: 0% 0% 0% 0%;
 }
@@ -52,8 +86,8 @@ nav a{
 }
 
 img.flower:hover {
-    transform: rotate(1.3turn);
-    transition: transform 1.75s;
+    transform: rotate(3turn);
+    transition: transform 4s;
  
 
 }
