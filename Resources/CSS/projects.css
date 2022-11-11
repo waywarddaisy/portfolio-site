@@ -40,6 +40,93 @@ nav li {
   
 }
 
+@media only screen and (max-width: 1530px) and (min-width: 1025px){
+
+
+
+    header {
+        display: flex;
+        margin-bottom: 5rem;
+    }
+
+    nav {
+        
+        margin-right: 0%;
+        margin-left: 1rem;
+       
+    }
+
+    nav li {
+        margin-right: 0%;
+        font-size: 1rem;
+        letter-spacing: .75rem;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+    header {
+        display: flex;
+        margin-bottom: 5rem;
+    }
+
+
+    nav li {
+        margin-right: 0%;
+        font-size: .75rem;
+        letter-spacing: .65rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+
+    header {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+
+    nav li {
+        margin-right: 0%;
+        font-size: .5rem;
+        letter-spacing: .5rem;
+        padding-top: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+
+    body {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    header {
+        display: flex;
+        margin-bottom: 2rem;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    nav {
+        margin-right: 1rem;
+    }
+
+    nav li {
+        margin-right: 0%;
+        font-size: .75rem;
+        letter-spacing: .35rem;
+        padding-top: 1rem;
+    }
+
+
+}
+
 ul {
     margin: 0% 0% 0% 0%;
 }
@@ -73,6 +160,58 @@ logo a {
     text-decoration: none;
     color: #f8b7cd;
 }
+
+@media only screen and (max-width: 1530px) and (min-width: 1025px) {
+
+    logo {
+        font-size: 8rem;
+        margin-left: 2rem;
+    }
+
+    img.flower {
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+    logo {
+        font-size: 7rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    img.flower {
+        width: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    logo {
+        font-size: 4rem;
+        margin-left: 1rem;
+    }
+
+    img.flower {
+        width: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    logo {
+        font-size: 5rem;
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    img.flower {
+        width: 5px;
+    }
+
+}
+
 main {
     width: 100%;
     padding: 0%;
@@ -176,5 +315,376 @@ button.dinner {
 button.bread {
     grid-area: 4 / 3 / span 1 / span 1;
 }
+
+@media only screen and (max-width: 1530px) and (min-width: 1025px) {
+
+    main {
+        width: 100%;
+        padding: 0%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 9;
+        margin-top: 4rem;
+        margin-left: 2%;
+        margin-right: 2%;
+        column-gap: 1.5rem;
+        
+    
+    }
+
+    main img {
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+
+    .cielo img {
+        grid-area: 1 / 1 / span 1/ span 1;
+       
+    
+    }
+    .dinner img {
+        grid-area: 1 / 2 / span 1 / span 1;
+    
+    }
+    .bread img {
+        grid-area: 6 / 1 / span 1 / span 1;
+    
+    }
+    
+    h1.cielo  {
+        grid-area: 2 / 1 / span 1 / span 1;
+    
+    }
+    h1.dinner {
+        grid-area: 2 / 2 / span 1 / span 1;
+    
+    }
+    h1.bread  {
+        grid-area: 7 / 1 / span 1 / span 1;
+    
+    }
+    
+    p.cielo {
+        grid-area: 3 / 1 / span 1 / span 1;
+        
+    }
+    
+    p.dinner {
+        grid-area: 3 / 2 / span 1 / span 1;
+
+    }
+    
+    p.bread {
+        grid-area: 8 / 1 / span 1 / span 1;
+    }
+    
+    button.cielo {
+        grid-area: 4 / 1 / span 1 / span 1;
+        margin-bottom: 4rem;
+        
+    }
+    
+    button.dinner {
+        grid-area: 4 / 2 / span 1 / span 1;
+        margin-bottom: 4rem;
+    }
+    
+    button.bread {
+        grid-area: 9 / 1 / span 1 / span 1;
+    }
+   
+
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+    main {
+        width: 100%;
+        padding: 0%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 9;
+        margin-top: 4rem;
+        margin-left: 2%;
+        margin-right: 2%;
+        column-gap: .75rem;
+        
+        
+        
+    
+    }
+
+    img.cielo  {
+        grid-area: 1 / 1 / span 1/ span 1;
+        width: 325px;
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+        
+    
+    }
+    img.dinner  {
+        grid-area: 1 / 2 / span 1 / span 1;
+        width: 325px;
+        height: 231px;
+        margin-left: 10%;
+        margin-right: 10%;
+    
+    }
+    img.bread  {
+        grid-area: 6 / 1 / span 1 / span 1;
+        width: 325px;
+        margin-left: 10%;
+        margin-right: 10%;
+    
+    }
+    
+    h1.cielo  {
+        grid-area: 2 / 1 / span 1 / span 1;
+        font-size: 1rem;
+    
+    }
+    h1.dinner {
+        grid-area: 2 / 2 / span 1 / span 1;
+        font-size: 1rem;
+    
+    }
+    h1.bread  {
+        grid-area: 7 / 1 / span 1 / span 1;
+        font-size: 1rem;
+    
+    }
+    
+    p.cielo {
+        grid-area: 3 / 1 / span 1 / span 1;
+        
+    }
+    
+    p.dinner {
+        grid-area: 3 / 2 / span 1 / span 1;
+
+    }
+    
+    p.bread {
+        grid-area: 8 / 1 / span 1 / span 1;
+    }
+
+    button {
+        padding: 10px;
+    }
+    
+    button.cielo {
+        grid-area: 4 / 1 / span 1 / span 1;
+        margin-bottom: 4rem;
+        
+    }
+    
+    button.dinner {
+        grid-area: 4 / 2 / span 1 / span 1;
+        margin-bottom: 4rem;
+    }
+    
+    button.bread {
+        grid-area: 9 / 1 / span 1 / span 1;
+    }
+   
+
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+
+    main {
+        width: 100%;
+        padding: 0%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 12;
+        margin-top: 4rem;
+        margin-left: 2%;
+        margin-right: 2%;
+        column-gap: .75rem;
+        justify-items: center;
+        
+        
+        
+    
+    }
+
+    img.cielo  {
+        grid-area: 1 / 1 / span 1/ span 1;
+        width: 350px;
+        justify-items: center;
+        
+        
+    
+    }
+    img.dinner  {
+        grid-area: 5 / 1 / span 1 / span 1;
+        width: 350px;
+        height: 250px;
+        justify-items: center;
+    
+    }
+    img.bread  {
+        grid-area: 9 / 1 / span 1 / span 1;
+        width: 350px;
+        justify-items: center;
+    
+    }
+    
+    h1.cielo  {
+        grid-area: 2 / 1 / span 1 / span 1;
+        font-size: 1rem;
+    
+    }
+    h1.dinner {
+        grid-area: 6 / 1 / span 1 / span 1;
+        font-size: 1rem;
+    
+    }
+    h1.bread  {
+        grid-area: 10 / 1 / span 1 / span 1;
+        font-size: 1rem;
+    
+    }
+    
+    p.cielo {
+        grid-area: 3 / 1 / span 1 / span 1;
+        
+    }
+    
+    p.dinner {
+        grid-area: 7 / 1 / span 1 / span 1;
+
+    }
+    
+    p.bread {
+        grid-area: 11 / 1 / span 1 / span 1;
+    }
+
+    button {
+        padding: 10px;
+        
+    }
+    
+    button.cielo {
+        grid-area: 4 / 1 / span 1 / span 1;
+        margin-bottom: 4rem;
+        
+        
+    }
+    
+    button.dinner {
+        grid-area: 8 / 1 / span 1 / span 1;
+        margin-bottom: 4rem;
+    }
+    
+    button.bread {
+        grid-area: 12 / 1 / span 1 / span 1;
+    }
+   
+
+
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+
+    main {
+        width: 100%;
+        padding: 0%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 12;
+        margin-top: 4rem;
+        margin-left: 2%;
+        margin-right: 2%;
+        column-gap: .75rem;
+        justify-items: center;
+        
+        
+        
+    
+    }
+
+    img.cielo  {
+        grid-area: 1 / 1 / span 1/ span 1;
+        width: 300px;
+        justify-items: center;
+        
+        
+    
+    }
+    img.dinner  {
+        grid-area: 5 / 1 / span 1 / span 1;
+        width: 300px;
+        height: 214px;
+        justify-items: center;
+    
+    }
+    img.bread  {
+        grid-area: 9 / 1 / span 1 / span 1;
+        width: 300px;
+        justify-items: center;
+    
+    }
+    
+    h1.cielo  {
+        grid-area: 2 / 1 / span 1 / span 1;
+        font-size: 1rem;
+    
+    }
+    h1.dinner {
+        grid-area: 6 / 1 / span 1 / span 1;
+        font-size: 1rem;
+    
+    }
+    h1.bread  {
+        grid-area: 10 / 1 / span 1 / span 1;
+        font-size: 1rem;
+    
+    }
+    
+    p.cielo {
+        grid-area: 3 / 1 / span 1 / span 1;
+        
+    }
+    
+    p.dinner {
+        grid-area: 7 / 1 / span 1 / span 1;
+
+    }
+    
+    p.bread {
+        grid-area: 11 / 1 / span 1 / span 1;
+    }
+
+    button {
+        padding: 10px;
+        
+    }
+    
+    button.cielo {
+        grid-area: 4 / 1 / span 1 / span 1;
+        margin-bottom: 4rem;
+        
+        
+    }
+    
+    button.dinner {
+        grid-area: 8 / 1 / span 1 / span 1;
+        margin-bottom: 4rem;
+    }
+    
+    button.bread {
+        grid-area: 12 / 1 / span 1 / span 1;
+    }
+   
+
+
+}
+
 
 

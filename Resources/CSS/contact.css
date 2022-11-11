@@ -41,6 +41,93 @@ nav li {
   
 }
 
+@media only screen and (max-width: 1530px) and (min-width: 1025px){
+
+
+
+    header {
+        display: flex;
+        margin-bottom: 5rem;
+    }
+
+    nav {
+        
+        margin-right: 0%;
+        margin-left: 1rem;
+       
+    }
+
+    nav li {
+        margin-right: 0%;
+        font-size: 1rem;
+        letter-spacing: .75rem;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+    header {
+        display: flex;
+        margin-bottom: 5rem;
+    }
+
+
+    nav li {
+        margin-right: 0%;
+        font-size: .75rem;
+        letter-spacing: .65rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+
+    header {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+
+    nav li {
+        margin-right: 0%;
+        font-size: .5rem;
+        letter-spacing: .5rem;
+        padding-top: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+
+    body {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    header {
+        display: flex;
+        margin-bottom: 2rem;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    nav {
+        margin-right: 1rem;
+    }
+
+    nav li {
+        margin-right: 0%;
+        font-size: .75rem;
+        letter-spacing: .35rem;
+        padding-top: 1rem;
+    }
+
+
+}
+
 ul {
     margin: 0% 0% 0% 0%;
 }
@@ -74,20 +161,96 @@ logo a {
     color: #f8b7cd;
 }
 
+@media only screen and (max-width: 1530px) and (min-width: 1025px) {
+
+    logo {
+        font-size: 8rem;
+        margin-left: 2rem;
+    }
+
+    img.flower {
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+    logo {
+        font-size: 7rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    img.flower {
+        width: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    logo {
+        font-size: 4rem;
+        margin-left: 1rem;
+    }
+
+    img.flower {
+        width: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    logo {
+        font-size: 5rem;
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    img.flower {
+        width: 5px;
+    }
+
+}
+
+
+main {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1;
+    justify-items: center;
+    align-items: center;
+
+}
+
 #letter {
-    display: block;
+    display:block;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin: 0%;
     padding-top: 2.5rem;
     padding-bottom: 6rem;
     background-image: url("/Users/jenna/Desktop/Coding Projects/portfolio site/Resources/paper.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    grid-area: 1 / 1 / span 1/ span 1;
+    justify-items: center;
 }
 form {
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
     padding-top: 5.10rem;
     padding-bottom: 6rem;
-    margin: 0rem 5rem 0rem 40rem;
+    margin: 0rem;
     color: #0671b7;
+    grid-area: 1 / 1 / span 1/ span 1;
+    justify-items: center;
+    text-align: center;
 }
 
 
@@ -101,13 +264,15 @@ input  {
     color: #0671b7;
     border: none;
     background-color: #f8b7cd;
-    padding: 1rem;
+    padding: .75rem;
     border-radius: 5px;
-    margin-left: 8rem;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     letter-spacing: .3rem;
+
 }
+
+
 form p {
     font-size: 1.25rem;
     
@@ -117,22 +282,44 @@ textarea {
     border: none;
 }
 
-#sending {
+container {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1;
+    justify-items: center;
+    align-items: center;
+    
+    
+
+}
+
+send#sending {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
     display: none;
     padding-top: 0rem;
     background-image: url("/Users/jenna/Desktop/Coding Projects/portfolio site/Resources/stamp.gif") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  
+
 }
 
 p.send {
     color: #0671b7;
-    margin-left: 50rem;
     position: absolute;
-    margin-top: 23rem;
+    margin-top: 10rem;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
+    grid-area: 1 / 1 / span 1/ span 1;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
     
     
     
@@ -144,10 +331,113 @@ input#send{
     background-color: #f8b7cd;
     padding: 1rem;
     border-radius: 5px;
-    margin-left: 50rem;
     font-weight: bold;
     font-size: 1.5rem;
     letter-spacing: .3rem;
-    margin-top: 35rem;
+    margin-top: 40rem;
+    grid-area: 1 / 1 / span 1/ span 1;
+    justify-items: center;
     
 }
+
+@media only screen and (max-width: 1530px) and (min-width: 1025px) {
+
+p.letter {
+    font-size: 1rem;
+}
+textarea#message.letter {
+    width: 20rem;
+
+}
+input#send{
+ 
+    margin-top: 30rem;
+   
+}
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+    p.letter {
+        font-size: .85rem;
+    }
+    textarea#message.letter {
+        width: 15rem;
+    
+    }
+    input#send{
+ 
+        margin-top: 30rem;
+       
+    }
+    }
+
+    @media only screen and (max-width: 768px) and (min-width: 481px) {
+
+        p.letter {
+            font-size: .85rem;
+        }
+        textarea#message.letter {
+            width: 15rem;
+        
+        }
+
+        header {
+            margin-bottom: 0%;
+        }
+
+        input#send{
+ 
+            margin-top: 25rem;
+           
+        }
+
+        p.send {
+            margin-top: 8rem;
+            font-size: 1rem;
+        }
+        }
+
+        @media only screen and (max-width: 480px) and (min-width: 320px) {
+
+            p.letter {
+                font-size: .85rem;
+            }
+            textarea#message.letter {
+                width: 15rem;
+            
+            }
+    
+            header {
+                margin-bottom: 0%;
+            }
+
+            form.letter {
+                padding-top: 0%;
+            }
+
+            letter#letter.letter {
+                padding-top: 0%;
+
+            }
+
+            #letter {
+                background-image: none;
+                background-color:#dde2e5;
+                
+            }
+
+            input#send{
+ 
+                margin-top: 25rem;
+               
+            }
+    
+            p.send {
+                margin-top: 8rem;
+                font-size: 1rem;
+            }
+
+        
+            }
