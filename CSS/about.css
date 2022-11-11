@@ -145,6 +145,11 @@ img.flower:hover {
 
 }
 
+a:hover img.flower {
+    transform: rotate(3turn);
+    transition: transform 4s;
+}
+
 logo {
     font-size: 8.5rem;
     margin-left: 10rem;

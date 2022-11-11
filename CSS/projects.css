@@ -140,8 +140,11 @@ nav a{
 img.flower:hover {
     transform: rotate(1.3turn);
     transition: transform 1.75s;
- 
+}
 
+a:hover img.flower {
+    transform: rotate(3turn);
+    transition: transform 4s;
 }
 
 logo {
@@ -681,8 +684,6 @@ button.bread {
     button.bread {
         grid-area: 12 / 1 / span 1 / span 1;
     }
-   
-
 
 }
 
