@@ -303,7 +303,7 @@ send#sending {
     padding: 0%;
     display: none;
     padding-top: 0rem;
-    background-image: url("/Users/jenna/Desktop/Coding Projects/portfolio site/Resources/stamp.gif") ;
+    background-image: url("../Resources/stamp.gif") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
