@@ -237,7 +237,7 @@ main {
     margin: 0%;
     padding-top: 2.5rem;
     padding-bottom: 6rem;
-    background-image: url("/Users/jenna/Desktop/Coding Projects/portfolio site/Resources/paper.jpg") ;
+    background-image: url("../Resources/paper.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
