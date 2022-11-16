@@ -138,16 +138,12 @@ nav a{
     text-decoration: none;
 }
 
-img.flower:hover {
-    transform: rotate(1.3turn);
-    transition: transform 1.75s;
- 
-
+.flower {
+    transition: transform 2s linear;
 }
 
-a:hover img.flower {
+a:hover .flower {
     transform: rotate(3turn);
-    transition: transform 4s;
 }
 
 logo {
