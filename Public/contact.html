@@ -8,24 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/universal.css">
     
     <title>Contact</title>
 </head>
-<body>
-    <header>
-        <logo><a href="index.html">jh</a></logo>
-        <nav>
-            <ul>
-                
-                <li><a href="projects.html"><img src="Resources/blackflowertwo.jpg" width="30px" class="flower"> PROJECTS</a></li>
-                <li><a href="about.html"><img src="Resources/blackflowertwo.jpg" width="30px" class="flower"> ABOUT</a></li>
-                <li><a href="index.html"><img src="Resources/blackflowertwo.jpg" width="30px" class="flower"> HOME</a></li>
-            </ul>
-        </nav>
+<body id="body">
+    <div id="alt-logo">jh</div>
+    <header id="header">
     </header>
     <main>
         <letter class="letter" id="letter">
-            <form action="" class="letter" >
+            <form action="https://formsubmit.co/jenna@waywarddaisy.com" method="POST" class="letter"/>  
                 <p class="letter">Dearest Jenna Hill,</p>
                 
                 <p class="letter">My name is <input id="yourname" type="text" name="yourname" minlength="1" maxlength="25" required></p>
@@ -58,6 +51,8 @@
         </send>
 
     </main>
+    <div id="alt-nav"></div>
+    <script src="/Public/JS/universal.js"></script>
     <script defer src="JS/contact.js"></script>  
 </body>
 </html>

@@ -1,0 +1,177 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    box-sizing: border-box;
+  
+}
+
+#header {
+    width: 80%;
+    padding: 0%;
+    display: inline-block;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+
+}
+
+#inner-wrapper{
+    display: flex;  
+    flex-direction: row;
+
+}
+
+.nav-li {
+
+  
+    color: #60a0d3;
+    list-style-type: none;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: .70rem;
+    padding-top: 9rem;
+ 
+  
+}
+
+#nav {
+    width: 100%;
+    display: flex; 
+    justify-content: flex-end; 
+    
+    
+}
+
+ul {
+    margin: 0% 0% 0% 0%;
+    display: flex; 
+
+}
+
+
+#nav a{
+    color: #60a0d3;
+    text-decoration: none;
+}
+
+.flower {
+    transition: transform 2s linear;
+  
+}
+
+a:hover .flower {
+    transform: rotate(3turn);
+}
+  
+
+#logo {
+    font-size: 8.5rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-top: 4rem;
+    display: inline-block;
+    color: #f8b7cd;  
+    padding-bottom: 0%;
+    text-decoration: none;
+    color: #f8b7cd;
+    width: 100%;
+
+}
+
+#logo:hover {
+    color:#60a0d3;
+}
+
+#alt-logo {
+    display: none;
+    font-size: 7.5rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-top: 1rem;
+    color: #f8b7cd;  
+    padding-bottom: 0%;
+    text-decoration: none;
+    color: #f8b7cd;
+    width: 100%;
+
+}
+
+#alt-nav {
+    width: 100%;
+    display: none;
+    flex-flow: row nowrap;
+    padding-top: 5%;
+    background-color: hsl(207, 67%, 43%);
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+#alt-ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    margin-bottom: 5%;
+}
+.alt-nav-link {
+    text-decoration: none;
+    color: white;
+    letter-spacing: .05rem;
+}
+
+.alt-nav-link:hover {
+    color: pink;
+}
+
+.alt-nav-li {
+    list-style-type: none;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 315px) {
+
+    #header {
+        display: none;
+    }
+
+    #alt-logo {
+        display: inline-block;
+        text-align: center;
+    }
+
+    #alt-nav {
+
+        display: flex;
+
+    }
+
+}
+
+@media only screen and (max-width: 950px) and (min-width: 769px) {
+    
+    .nav-li {
+
+        letter-spacing: .45rem;
+        font-size: .9rem;
+    }
+    .flower {
+        width: 20px;
+        height: 20px;
+      
+    }
+
+    #logo {
+        font-size: 7.5rem;
+}
+
+}
