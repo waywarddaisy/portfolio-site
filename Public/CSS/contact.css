@@ -1,52 +1,57 @@
-
 main {
     width: 100%;
     padding: 0%;
     margin: 12% 0% 5% 0%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1;
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    background-image: url("../Resources/paper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
 
 }
 
 #letter {
-    display:block;
+    display: flex;
     width: 100%;
     padding-left: 0%;
     padding-right: 0%;
-    margin: 0%;
-    padding-top: 2.5rem;
+    margin: 5% 0%;
+    padding-top: 1rem;
     padding-bottom: 6rem;
-    background-image: url("../Resources/paper.jpg") ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    grid-area: 1 / 1 / span 1/ span 1;
-    justify-items: center;
+    justify-content: center;
+
 }
+
 form {
-    width: 100%;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-top: 5.10rem;
-    padding-bottom: 6rem;
-    margin: 0rem;
+    width: 20%;
+    padding: 0%;
+    padding-left: .75%;
+    margin: 0;
     color: #0671b7;
-    grid-area: 1 / 1 / span 1/ span 1;
     justify-items: center;
-    text-align: center;
+    text-align: left;
+    background-color: #dde2e5;
+    z-index: 500;
 }
 
 
-input  {
+textarea, input {
     color: #0671b7;
-    border: none;
+    border-style: dotted;
+    border-color: white; 
     
+
 }
 
-#submit{
+textarea:hover, input:hover {
+    border-style: dotted;
+    border-color: #f8b7cd; 
+
+}
+
+
+#submit {
     color: #0671b7;
     border: none;
     background-color: #f8b7cd;
@@ -54,170 +59,118 @@ input  {
     border-radius: 5px;
     font-weight: bold;
     font-size: 1.25rem;
-    letter-spacing: .3rem;
+    letter-spacing: .2rem;
 
 }
 
+#submit:hover {
+    color: white;
+}
+
 form p {
+    font-family: 'Nunito', sans-serif;
     font-size: 1.25rem;
-    
+    letter-spacing: .10rem;
+
 }
 
 textarea {
     border: none;
+    width: 90%;
 }
 
-container {
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1;
-    justify-items: center;
-    align-items: center;
 
-}
-
-send#sending {
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
-    display: none;
-    padding-top: 0rem;
-    background-image: url("../Resources/stamp.gif") ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-}
-
-p.send {
-    color: #0671b7;
-    position: absolute;
-    margin-top: 10rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
-    grid-area: 1 / 1 / span 1/ span 1;
-    justify-items: center;
-    align-items: center;
-    align-self: center; 
-    
-}
-
-input#send{
-    color: #0671b7;
-    border: none;
-    background-color: #f8b7cd;
-    padding: 1rem;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.5rem;
-    letter-spacing: .3rem;
-    margin-top: 40rem;
-    grid-area: 1 / 1 / span 1/ span 1;
-    justify-items: center;
-    
-}
-
-@media only screen and (max-width: 1530px) and (min-width: 1025px) {
-
-    p.letter {
-        font-size: 1rem;
-    }
-    textarea#message.letter {
-        width: 20rem;
-
-    }
-    input#send{
- 
-        margin-top: 30rem;
-   
-    }
-
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
-
-    p.letter {
-        font-size: .85rem;
-    }
-    textarea#message.letter {
-        width: 15rem;
-    
-    }
-    input#send{
- 
-        margin-top: 30rem;
-       
-    }
-}
-
-@media only screen and (max-width: 768px) and (min-width: 481px) {
-
-    p.letter {
-        font-size: .85rem;
-    }
-    textarea#message.letter {
-        width: 15rem;
-        
-    }
-
-    header {
-        margin-bottom: 0%;
-    }
-
-    input#send{
- 
-        margin-top: 25rem;
-           
-    }
-
-    p.send {
-        margin-top: 8rem;
-        font-size: 1rem;
-    }
-}
-
-@media only screen and (max-width: 480px) and (min-width: 320px) {
-
-    p.letter {
-        font-size: .85rem;
-    }
-    textarea#message.letter {
-        width: 15rem;
-            
-    }
-    
-    header {
-        margin-bottom: 0%;
-    }
-
-    form.letter {
-        padding-top: 0%;
-    }
-
-    letter#letter.letter {
-        padding-top: 0%;
-
-    }
-
-    #letter {
+@media only screen and (max-width: 768px) and (min-width: 315px) {
+    main {
+        margin: 10% 0%;
+        background-color: #dde2e5;
+        width: 100%;
         background-image: none;
-        background-color:#dde2e5;
-                
     }
 
-    input#send{
- 
-        margin-top: 25rem;
-               
+    form {
+        width: 90%;
+      
     }
-    
-    p.send {
-        margin-top: 8rem;
+
+    form p {
         font-size: 1rem;
+      
     }
 
-        
+    textarea {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 769px) {
+
+    form {
+        margin-top: 5%;
+        width: 25%;
+        height: 90%;
+        background-color: transparent;
+        padding-bottom: none;
+    }
+
+    form p {
+        font-size: .85rem;
+        color: #0371ba;
+ 
+      
+    }
+
+    textarea {
+        width: 90%;
+        height: 25%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1026px) {
+
+    form {
+        margin-top: 3%;
+        width: 25%;
+        height: 88%;
+        padding-bottom: none;
+    }
+
+
+    form p {
+        font-size: .85rem;
+        color: #0371ba;
+    }
+
+    textarea {
+        width: 90%;
+        height: 25%;
+    }
+
+
+}
+
+@media only screen and (max-width: 1652px) and (min-width: 1201px) {
+
+
+    form {
+        margin-top: 3%;
+        width: 25%;
+        height: 88%;
+        padding-bottom: none;
+        padding: 0;
+
+    }
+
+
+    form p {
+        font-size: 1rem;
+        color: #0371ba;
+    }
+
+    textarea {
+        width: 90%;
+        height: 25%;
+    }
+
 }

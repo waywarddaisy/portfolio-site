@@ -4,7 +4,7 @@ const projectsArray = [{
     photoUrl:"https://res.cloudinary.com/dw0mjyoeg/image/upload/v1677355557/Wayward%20Daisy%20Photos/Garden%20WWD/fortythree_p98z01.jpg",
     thumbnail: "https://res.cloudinary.com/dw0mjyoeg/image/upload/v1677355688/Wayward%20Daisy%20Photos/Garden%20WWD/two_vgpdy9.jpg",
     description: "A local flower farming business in San Diego County.",
-    linkUrl: "www.waywarddaisy.com",
+    linkUrl: "http://waywarddaisy.com",
     gitHubLink: "https://github.com/waywarddaisy/wayward-daisy",
     blurb: ["I created this site for my own business, Wayward Daisy Flowers. I previously had a squarespace site which I built out, but was very limiting and so I decided to build it on my own as part of my developer training because it was a business I am familiar with. It was created with HTML, CSS and Javascript.",
 "The header which includes the navigation and logo, was created dynamically so that I did not have to re-create it on each html page. This way it can be dynamically changed if need be.",

@@ -17,19 +17,28 @@ const showProject = (prod) => {
     let productPhotoLink = document.createElement("a");
     productPhotoLink.className = "photo-link";
     productPhotoLink.href = prod.linkUrl;
+    let photoContainer=document.createElement("div");
+    photoContainer.id="photo-container";
+    photoDiv.appendChild(photoContainer);
+
     let productPhoto = document.createElement("img");
     productPhoto.src = prod.photoUrl;
     productPhoto.className = "photo";
     photoDiv.appendChild(productPhotoLink);
-    productPhotoLink.appendChild(productPhoto);
-    let visitSiteButton = document.createElement("button");
-    visitSiteButton.innerHTML = "VISIT SITE";
-    visitSiteButton.className = "site-button";
+    productPhotoLink.appendChild(photoContainer);
+    photoContainer.appendChild(productPhoto);
+
     let visitSiteLink = document.createElement("a");
     visitSiteLink.href = prod.linkUrl;
     visitSiteLink.className = "link-button";
-    visitSiteButton.appendChild(visitSiteLink);
-    photoDiv.appendChild(visitSiteButton);
+
+    let visitSiteButton = document.createElement("button");
+    visitSiteButton.innerHTML = "VISIT SITE";
+    visitSiteButton.className = "site-button";
+    
+
+    visitSiteLink.appendChild(visitSiteButton);
+    photoDiv.appendChild(visitSiteLink);
     let blurb = document.createElement("div");
     blurb.id = "blurb";
     const iteratePara = (para) => {
@@ -40,14 +49,15 @@ const showProject = (prod) => {
     prod.blurb.forEach((para) => iteratePara(para));
     photoDiv.appendChild(blurb);
 
-    let visitGitRepoButton = document.createElement("button");
-    visitGitRepoButton.innerHTML = "VISIT GIT REPOSITORY";
-    visitGitRepoButton.className = "git-button";
     let visitGitRepoLink = document.createElement("a");
     visitGitRepoLink.href = prod.gitHubLink;
     visitGitRepoLink.className = "link-button";
-    visitSiteButton.appendChild(visitGitRepoLink);
-    photoDiv.appendChild(visitGitRepoButton);
+    let visitGitRepoButton = document.createElement("button");
+    visitGitRepoButton.innerHTML = "VISIT GIT REPOSITORY";
+    visitGitRepoButton.className = "git-button";
+   
+    visitGitRepoLink.appendChild(visitGitRepoButton);
+    photoDiv.appendChild(visitGitRepoLink);
 
 };
 

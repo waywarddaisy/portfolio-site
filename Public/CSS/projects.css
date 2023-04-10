@@ -26,9 +26,6 @@ h4 {
 }
 
 .gallery-item {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     width: 100%;
     height: 100%;
 }
@@ -68,7 +65,6 @@ a:active {
 }
 
 button {
-    margin: 3% 25%;
     margin-top: 3%;
     color: #0671b7;
     border: none;
@@ -87,27 +83,39 @@ button:hover {
     color: pink;
 }
 
+.more-info-a{
+    display:flex;
+    justify-content: center;
+}
+
+footer {
+    height: 100px;
+    display: inline-block;
+
+}
+
 @media only screen and (max-width: 768px) and (min-width: 315px) {
 
     main {
-        margin: 10% 8% 5% 8%;
+        margin-top: 10%;
     }
 
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 200px;
-        column-gap: 1rem;
+    #gallery {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 400px;
+        justify-content: center;
 
     }
-
+   
 
 
     h4 {
-        font-size: .75rem;
-    }
+        font-size: 1.25rem;
 
+    }
+    
     footer {
-        height: 500px;
+        height: 700px;
         display: inline-block;
 
     }
@@ -117,23 +125,29 @@ button:hover {
 
 
     main {
-        margin: 25% 8% 5% 8%;
+        margin: 30% 8% 5% 8%;
     }
 
-    .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 400px;
+    #gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 500px 500px;
         column-gap: 1rem;
-        row-gap: 15%;
-
+        row-gap: 5%;
     }
 
-    h4 {
-        font-size: .75rem;
+    .gallery-item .image {
+        height: 50%;
     }
+  
+    footer {
+        height: 100px;
+        display: inline-block;
 
+    }
 
 }
+
+
 
 @media only screen and (max-width: 1200px) and (min-width: 1026px) {
 
@@ -145,7 +159,11 @@ button:hover {
 
         grid-auto-rows: 300px;
         column-gap: 1rem;
-        row-gap: 35%;
+    }
+
+    footer {
+        height: 200px;
+        display: inline-block;
 
     }
 }

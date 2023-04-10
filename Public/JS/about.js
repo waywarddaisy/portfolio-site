@@ -1,7 +1,9 @@
 
-let aboutPara = document.getElementById('bio');
+let aboutPara = document.getElementById('bio-div');
 
 const changeColor = ()=> {
+    console.log("mouseoverfired");
+    console.log(aboutPara);
 
     aboutPara.style.color = "#f8b7cd"
 };
@@ -11,9 +13,11 @@ const reset = ()=> {
     aboutPara.style.color = "#0671b7"
 };
 
-aboutPara.onmouseover = changeColor;
+aboutPara.addEventListener("mouseover", changeColor);
 
 aboutPara.onmouseout = reset;
+
+console.log(aboutPara);
 
 
 let hello = document.getElementById('hello');

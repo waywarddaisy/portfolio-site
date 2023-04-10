@@ -10,8 +10,6 @@ main {
     width: 100%;
     margin: 0%;
     padding: 0%;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -58,7 +56,7 @@ img.photo {
 
 button {
     margin: 0%;
-    margin-top: 3%;
+    margin-top: 5%;
     color: #0671b7;
     border: none;
     background-color: #f8b7cd;
@@ -73,4 +71,64 @@ button {
 
 button:hover {
     color: white;
+}
+
+#photo-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.photo {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+
+}
+@media only screen and (max-width: 768px) and (min-width: 315px) {
+    main {
+        margin: 5% 0% 20% 0% ;
+    }
+    h1 {
+    
+        font-size: 2rem;
+    }
+
+    #blurb {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    #photo-container {
+
+        height: 300px;
+        margin-bottom: 3%;
+    }
+
+    .photo-div {
+        width: 90%;
+
+    }
+
+    button {
+
+        margin-top: 5%;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 769px) {
+
+    main {
+        margin: 25% 0% 10% 0% ;
+    }
+}
+@media only screen and (max-width: 1260px) and (min-width: 1026px) {
+
+    main {
+        margin: 20% 0% 5% 0% ;
+    }
+
 }

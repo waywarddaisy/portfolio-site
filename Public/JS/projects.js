@@ -24,6 +24,7 @@ const displayProjects = (project) => {
 
   let buttonLink = document.createElement("a");
   buttonLink.href = "/Public/project-page.html";
+  buttonLink.className ="more-info-a";
   galleryItem.appendChild(buttonLink);
   let button = document.createElement("button");
   button.innerHTML = "More Info";

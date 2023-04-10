@@ -3,8 +3,8 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: scroll;
     box-sizing: border-box;
+    overflow-x: hidden;
   
 }
 
@@ -17,6 +17,7 @@ html, body {
     position: fixed;
     background-color: white;
     z-index: 1000;
+    top: -50px;
 
 }
 
@@ -154,6 +155,7 @@ a:hover .flower {
         display: flex;
 
     }
+
 
 }
 
