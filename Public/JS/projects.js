@@ -1,24 +1,25 @@
 const displayProjects = (project) => {
+  const {name, description, thumbnail, id}= project;
   let container = document.getElementById("gallery");
   let galleryItem = document.createElement("div");
-  galleryItem.className = `gallery-item ${project.name}`;
+  galleryItem.className = `gallery-item ${name}`;
   container.appendChild(galleryItem);
   let image = document.createElement("div");
-  image.className = `image ${project.name}`;
+  image.className = `image ${name}`;
   galleryItem.appendChild(image);
   let projImg = document.createElement("img");
-  projImg.className = `${project.name}`;
-  projImg.src = `${project.thumbnail}`;
+  projImg.className = `${name}`;
+  projImg.src = `${thumbnail}`;
   projImg.setAttribute("loading", "lazy");
   image.appendChild(projImg);
   let textContainer = document.createElement("div");
-  textContainer.className = `text ${project.name}`;
+  textContainer.className = `text ${name}`;
   let h4 = document.createElement("h4");
-  h4.innerHTML = `${project.name}`;
+  h4.innerHTML = `${name}`;
   textContainer.appendChild(h4);
   let descriptionPara = document.createElement("p");
-  descriptionPara.className = `${project.name}`;
-  descriptionPara.innerHTML = `${project.description}`;
+  descriptionPara.className = `${name}`;
+  descriptionPara.innerHTML = `${description}`;
   textContainer.appendChild(descriptionPara);
   galleryItem.appendChild(textContainer);
 
@@ -28,7 +29,7 @@ const displayProjects = (project) => {
   galleryItem.appendChild(buttonLink);
   let button = document.createElement("button");
   button.innerHTML = "More Info";
-  button.id= project.id;
+  button.id= id;
   buttonLink.appendChild(button);
 
   const clickHandler =()=> {
