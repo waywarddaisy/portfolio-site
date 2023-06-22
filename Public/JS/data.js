@@ -24,7 +24,11 @@ const projectsArray = [{
     description: "A meal-planning site which helps to solve the much asked and less often solved question of 'What's for dinner?' without the torture and family drama!",
     linkUrl: "#",
     gitHubLink: "https://github.com/waywarddaisy/Whats-for-Dinner",
-    blurb: ["This project has not been completed."
+    blurb: ["This site was created in React and uses React-router.",
+    "The purpose of the site is to have options for dinner immediately available to the customer to choose from and to generate a shopping list from their choices as well as to enable them to buy cookbooks for the recipes. ",
+"Everything in the site is dynamic and uses State and Props to populate each page. The Find Meals page in particular is a great example of using React for the purpose it was intended. It re-renders each time the customer makes any selection. The site gives many options to edit previous selections, remove items from array and updates State while doing so. ",
+"This project was designed, architected and then created by me using React. It is not part of a tutorial or a class project. Its me creatively coming up with a solution to a problem that needs to be solved and using my coding skills to build it from scratch.",
+"I will continue to iterate on this project and am doing so as you are reading this, by creating user account and adding in the capability for customers to add their own recipes.",
 ]
 },
 {name: "Cielo Hills Flower Farm",
